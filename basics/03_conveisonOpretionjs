@@ -1,0 +1,45 @@
+let code="Vishal";
+
+// console.log(typeof(code));
+// code=true
+let codeInNumber=Number(code);
+
+console.log(typeof(codeInNumber)); //number
+// console.log(codeInNumber);  //NaN  //1 for ture & 0 is false
+
+
+// let userIsLoggedIn="vishal"; // true
+let userIsLoggedIn="";    //false
+
+let booleanUserIsLoggrdIn=Boolean(userIsLoggedIn)
+// console.log(booleanUserIsLoggrdIn);
+
+code=100;
+
+let strinCode=String(code)
+// console.log(typeof strinCode);
+
+
+
+// **********************opreators************************
+
+// console.log(1+2);
+// console.log(1-2);
+// console.log(1/2);
+// console.log(1%2);
+// console.log(2**3);
+
+
+let str="vishal"
+let str1=" Rajput"
+
+let str2=str+str1
+// console.log(str2);
+
+
+console.log("1"+2);
+console.log(2+"1");
+console.log("1"+2+3);
+console.log(2+5+"1");
+
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
