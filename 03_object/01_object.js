@@ -1,6 +1,8 @@
 // singleton
 // object.create
 
+// object literals
+
 const mysym=Symbol("key1")
 const MyObject={
     name:"vishal",
