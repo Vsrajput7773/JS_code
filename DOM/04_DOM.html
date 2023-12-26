@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+<div class="language">
+    <li>Java</li>
+</div>
+
+    <script>
+        function addlanguage(languageName){
+            const li=document.createElement('li')
+            li.innerHTML=`${languageName}`
+            document.querySelector('.language').appendChild(li)
+        }
+        addlanguage("Css")
+        addlanguage("python")
+
+        function addOptionLanguage(languageName){
+            const li =document.createElement('li')
+            li.appendChild(document.createTextNode(`${languageName}`))
+            document.querySelector('.language').appendChild(li)
+        }
+
+        addOptionLanguage("c++")
+
+        // Edit
+
+        const secand=document.querySelector('li:nth-child(2)')
+        // console.log(secand);
+        // secand.innerHTML="c"
+        const newli=document.createElement('li')
+        newli.textContent="C"
+        secand.replaceWith(newli)
+// edit
+
+const secandLang=document.querySelector("li:first-child")
+console.log(secandLang);
+
+secandLang.outerHTML='<li>TypScript</li>'
+// const newli1=document.createElement("li")
+// newli1.textContent="JavaScript"
+// secandLang.replaceWith(newli1)
+
+// remove
+
+const lastlang=document.querySelector("li:last-child")
+
+lastlang.remove()
+
+
+    </script>
+</body>
+</html>
