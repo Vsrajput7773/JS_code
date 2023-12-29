@@ -1,30 +1,29 @@
-class Student {
-    constructor(studentname,saction,age,studentId){
-        this.studentname = studentname;
-        this.saction =saction;
-        this.age =age;
-        this.studentId = studentId;
-    }
-    studentInfo(){
-      console.log(`${this.studentname} ID =${this.studentId}`);
-    }
+class User {
+  constructor(username){
+    this.username = username;
+
+  }
+  logMe(){
+    console.log(`USERNAME = ${this.username}`);
+  }
+
 }
 
-class Teacher extends Student {
-constructor(teachername,saction){
-super(saction)
-this.teachername = teachername;
+class Teacher extends User {
+  constructor(username,email, password){
+    super(username)
+    this.email = email;
+    this.password = password;
+  }
+  addCourse(){
+    console.log(`A new Course was added by teacher ${this.username} `);
+  }
 }
-findsaction(){
-console.log(this.saction);
-}
-}
 
-const student= new Student("studnet1","A","12","23")
+const tea =new Teacher("vsr","v@gmail.com","123")
+// tea.logMe() // USERNAME = vsr
+// tea.addCourse()
 
-const teacher = new Teacher("Ravi sir","m")
+const use =new User("vishal");
 
-
-student.studentInfo()
-
-teacher.findsaction()
+console.log(use);
